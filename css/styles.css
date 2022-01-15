@@ -16,7 +16,6 @@ a {
   --background-portf-button: #f5f4fa;
 }
 body {
-  /* background-color: var(--background-general); */
   background-color: var(--background-heder-);
   color: var(--color-text-);
   font-family: Roboto, sans-serif;
@@ -126,6 +125,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
 }
+
 .aut-nav .a-link:hover,
 .aut-nav .a-link:focus {
   color: var(--color-second-);
@@ -141,10 +141,14 @@ body {
 .aut-nav .a-link:focus .phone-svg {
   fill: var(--color-second-);
 }
-
+.a-link {
+  display: inline-flex;
+  align-items: center;
+}
 .envelope {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 161px;
   height: 16px;
   margin-right: 30px;
@@ -260,29 +264,15 @@ body {
   margin-right: 30px;
 }
 
-.we-item::before {
-  display: block;
-  content: "";
+.we-item-icon {
+  width: 270px;
   height: 120px;
   background-color: var(--background-portf-button);
-  /* background-size: contain; */
-  background-repeat: no-repeat;
-  background-position: center;
+  display: block;
   border-radius: 4px;
-}
-
-.icon-antenna::before {
-  background-image: url(../images/antenna.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/clock.svg);
-}
-.icon-diagram::before {
-  background-image: url(../images/diagram.svg);
-}
-.icon-astronaut::before {
-  background-image: url(../images/astronaut.svg);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .our-work {
